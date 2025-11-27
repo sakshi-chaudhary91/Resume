@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Screening - Single Page</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <div id="screen1" class="app-screen app-interface-section">
+        <header class="app-header">
+            <div class="logo">✨ AI Resume Screening</div>
+            <div class="menu-icon">☰</div>
+        </header>
+
+        <main class="app-content">
+            <div class="sidebar">
+                <button class="new-job-btn">➕ New job</button>
+                <p class="job-status">No jobs yet. Create one to get started</p>
+
+                <div class="job-requirements-panel">
+                    <div class="panel-header">
+                        <label for="job-input">First, enter a job requirements here ↓</label>
+                        <button class="save-btn">💾 Save</button>
+                    </div>
+                    <textarea id="job-input" placeholder="">List required skills and qualifications, location, experience, etc.
+
+Be as descriptive as possible.
+
+Avoid generic or unnecessary information, buzzwords.
+
+Once you've done this, start uploading resumes on the right →</textarea>
+                </div>
+            </div>
+
+            <div class="main-panel">
+                <div class="upload-area">
+                    <p class="upload-icon">📄</p>
+                    <p>Upload Resumes</p>
+                </div>
+
+                <div class="how-it-works">
+                    <h3>How does it work?</h3>
+                    <ol>
+                        <li>Enter your job description on the left.</li>
+                        <li>Upload several resumes on the right.</li>
+                        <li>Get a sorted list of applicants in seconds.</li>
+                    </ol>
+                </div>
+                
+                <div class="job-desc-and-list">
+                    <div class="job-description-preview">
+                        <p>We are currently seeking a highly motivated and skilled **customer service representative** to join our team. As a customer service representative, you will be the primary point of contact for our users and will be responsible for providing timely and effective assistance to ensure our users have a seamless experience on our platform.</p>
+                        <p class="responsibilities-title">Responsibilities include:</p>
+                        <ul>
+                            <li>Maintaining a high level of customer satisfaction by providing support through various channels.</li>
+                            <li>Troubleshooting and resolving user issues related to the platform or its functionalities.</li>
+                        </ul>
+                    </div>
+
+                    <div class="resumes-list">
+                        <p>Drag and drop resumes here</p>
+                        <ul>
+                            <li><span>1. Noor Stella</span><span>Stella CV 2023.pdf</span><span class="score green">79%</span></li>
+                            <li><span>2. Raphael Suarez</span><span>RaphSuarez_CV.pdf</span><span class="score green">79%</span></li>
+                            <li><span>3. Henry Lee</span><span>HenryLee_Resume.pdf</span><span class="score green">79%</span></li>
+                            <li><span>4. Jennifer Diaz</span><span>JennD_Resume.pdf</span><span class="score green">78%</span></li>
+                            <li><span>5. Nia Sha</span><span>CV updated August 2023.pdf</span><span class="score green">78%</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <hr class="section-separator">
+    <div class="scroll-anchor" id="info-section"></div>
+
+    <div id="screen2" class="info-screen">
+        <div class="info-container">
+            <h2 class="section-title">See Resume Screening AI In Action</h2>
+            <p class="section-subtitle">Watch how our intelligent platform transforms your recruitment workflow. From uploading resumes to getting ranked results in seconds—discover how easy it is to find your perfect candidates.</p>
+
+            <div class="video-section">
+                <div class="video-thumbnail">
+                                        <div class="watch-on-youtube-btn">Watch on YouTube</div>
+                </div>
+                <div class="stats-bar">
+                    <div><span class="stat-number">126,480+</span> resumes processed</div>
+                    <div><span class="stat-number">9,690+</span> jobs processed</div>
+                    <div><span class="stat-number">2,324+</span> happy customers</div>
+                </div>
+            </div>
+
+            <div class="text-content">
+                <h3>Who is it for?</h3>
+                <p>It is for recruiters in automatically screen a lot of resumes at once. For hiring managers to find the best candidates quickly. For HR managers to save time and money. It's for anyone who wants to hire the best talent.</p>
+                
+                <h3>What are the Benefits of AI Resume Screening?</h3>
+                <ul>
+                    <li>Time savings: AI Resume Screening significantly reduces the time required to screen resumes.</li>
+                    <li>Cost savings: By automating the screening process, you can reduce the costs associated with manual screening processes.</li>
+                    <li>Improved accuracy: AI Resume Screening can significantly improve the accuracy of candidate evaluations, ensuring the most suitable candidates are identified.</li>
+                    <li>Enhanced objectivity:By removing human bias from the screening process. AI Resume Screening ensures fair and objective evaluation of candidates.</li>
+                    <li>Improved candidate experience: AI Resume Screening can improve the candidate experience by providing timely feedback and a more objective evaluation.</li>
+                    <li>Improved quality of hire: By ensuring the most suitable candidates are identified, AI Resume Screening can improve the quality of hire.</li>
+                </ul>
+
+                <h3>Is it secure?</h3>
+                <p>We use end-to-end encryption while transferring your data and rely on Stripe to process your payments.</p>
+
+                <h3>What file formats do you support?</h3>
+                <p>We support PDF, DOC/DOCX, text files and more. You can also upload a zip archive with multiple resume files of these filetypes. And we also support spreadsheets (XLS, XLSX, CSV) with resume URLs. While uploading spreadsheets, please make sure there is only one column with resume URLs. If you are unable to manually extract the text from resumes that are protected by a password, please remove the password first.</p>
+                
+                <h3>Can I use this for free?</h3>
+                <p>Yes, you can use our service for free. However, there is a limit of 5 resumes that you can upload at a time. If you need to upload more than 5 resumes, you can sign up for a paid plan. You can also set your own OpenAI key in Settings to remove all limitations and use the service for free.</p>
+                
+                <h3>How is my data being stored and processed?</h3>
+                <p>We don't sell your data. Currently we only store resume file fingerprints and parsed text for easy retrieval. All of your submitted data is yours and can be easily deleted from the Settings page. If you have questions or custom requests for data handling, please contact our support via chat.</p>
+            </div>
+        </div>
+    </div>
+
+    <hr class="section-separator">
+    <div class="scroll-anchor" id="testimonial-section"></div>
+
+    <div id="screen3" class="info-screen">
+        <div class="info-container">
+            <h2 class="section-title">Resume Screening at Scale</h2>
+            <p class="section-text">AI Resume Screening offer a transformative approach to the recruitment process, significantly enhancing efficiency and accuracy. By leveraging sophisticated algorithms, our tool can swiftly analyze and rank resumes, matching them precisely to job descriptions. This not only accelerates the screening process but also ensures a high degree of objectivity, minimizing human bias can occur in manual evaluations. The algorithm analysis pinpoints relevant skills and experiences, making it easier for hiring managers to identify top candidates. Additionally, these tools can adapt and learn from data, continuously refining your screening capabilities. As a result, AI Resume Screening provides a potent solution for businesses seeking to optimize your hiring process, ensuring they attract and identify the most suitable candidates for your needs.</p>
+
+            <h3>How to Screen Resumes in High Volumes Effectively</h3>
+            <p class="section-text">Recruiter can spend up to 23 hours screening resumes for a single hire. Screening resumes in high volumes effectively can be efficiently managed by utilizing an AI Resume Screening application like ours. This tool harnesses Machine Learning, a subset of Artificial Intelligence, to evaluate resumes against job postings. It objectively rates job seeker resumes by analyzing their professional backgrounds, key skills, and alignment with the job description. The application generates scores for each candidate, reflecting how well their skills and experience match the job requirements. This not only accelerates the screening process but also ensures fairness and objectivity in candidate evaluation. Tech-savvy and soft skills are highlighted in a user-friendly view, aiding hiring managers in swiftly identifying the most suitable candidates. By employing this AI-driven approach, recruiters can handle high volumes of resumes more efficiently, ensuring no potential candidates are missed, and significantly reducing the time and effort typically required in manual screening processes.</p>
+
+            <h3 class="testimonials-heading">Testimonials</h3>
+            <div class="testimonial-section">
+                <div class="testimonial-card">
+                    <div class="profile-pic-wrapper">
+                        <div class="profile-pic">👩‍🦰</div>
+                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"It solves a real problem for remote companies. We receive 1000+ applicants for each position and it's impossible to review them all. With ResumeScreening.ai we can focus on the best candidates and save hours of our time."</p>
+                        <p class="author">Yanislava Hristova</p>
+                        <p class="author-title">Founder and CEO at Remote IT World Recruitment</p>
+                    </div>
+                </div>
+                 <div class="testimonial-card">
+                    <div class="profile-pic-wrapper">
+                        <div class="profile-pic">🧑‍🦱</div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"Hi, I'm Raman, Founder of Resume Screening AI. In the past, I've left several job boards and found that screening applicants at scale has always been a challenge. I've built this app to help companies screen applicants faster. If you have any questions, feel free to reach out to me on Twitter (link below) or just ping me in the the support chat. Enjoy your saved time!"</p>
+                        <p class="author">Raman Sha</p>
+                        <p class="author-title">Founder at ResumeScreening.ai</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="app-footer">
+            <div class="footer-logo-section">
+                <div class="footer-logo">✨ AI Resume Screening</div>
+                <p class="footer-tagline">AI powered resume screening that helps you find the best candidates faster.</p>
+            </div>
+            <div class="footer-links-group">
+                <div class="footer-links">
+                    <h4>RESOURCES</h4>
+                    <p>Pricing</p>
+                    <p>Settings</p>
+                    <p>Resume Parser API</p>
+                </div>
+                <div class="footer-links">
+                    <h4>LEGAL</h4>
+                    <p>Privacy Policy</p>
+                    <p>Terms & Conditions</p>
+                </div>
+                <div class="footer-settings">
+                    <p>© 2025 ResumeScreening.ai. All Rights Reserved.</p>
+                    <div class="theme-controls">
+                        <span>💡 Light</span>
+                        <span>🌙 Dark</span>
+                        <span>🖥️ System</span>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-icon">💬</div>
+        </footer>
+    </div>
+    
+    </body>
+</html>
